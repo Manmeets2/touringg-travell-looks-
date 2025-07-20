@@ -1,0 +1,302 @@
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+}
+:root{
+    --text-color:#fff;
+    --bg-color:#000;
+    --main-color:#EE4B2B;
+
+    --h1-font:6rem;
+    --h2-font:3rem;
+    --p-font:1rem;
+}
+body{
+    color:var( --text-color);
+    background: var( --bg-color);
+
+}
+header{
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:1000;
+    width:100%;
+    background:transparent;
+    padding:20px 10%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    transition: all 0.5s ease-in;
+}
+.logo{
+    font-size:80px;
+    color: var(--main-color);
+    font-weight:700;
+    padding-left:300px;
+
+}
+.navbar{
+    display:flex;
+}
+.navbar a{
+    color:var(--text-color);
+    font-size:var(--p-font) ;;
+    font-weight: 500;
+    margin:15px 22px;
+    transition: all 0.2s ease-in-out;
+    font-size:20px;
+   
+    
+
+}
+.navbar a:hover{
+    color:var(--main-color);
+    opacity: 1;
+    text-decoration:underline;
+}
+.h-right{
+    display:flex;
+    align-items:center;
+}
+.h-right a:first-child{
+    color:var(--text-color);
+    font-size:var(--p-font);
+    margin-right: 20px;
+}
+.h-right a{
+    vertical-align: middle;
+    font-size: 20px;
+    color: var(--text-color);
+    margin-right: 18px;
+    margin-left: 5px;
+    transition:all 0.3s  ease;
+}
+.h-right a:hover{
+    color:var(--main-color);
+    transform:translateY(-3px);
+}
+#menu-icon{
+    color:var(--text-color);
+    font-size: 25px;
+    cursor:pointer;
+    z-index:10001;
+    display:none;
+}
+section{
+    padding:70px 10% 60px;
+
+
+}
+.home{
+    position:relative;
+    height:100vh;
+    width:100%;
+    background:url(tours/HD-wallpaper-beach-tree-sea-clouds-beach-tree-sea-clouds-nature-sunset.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display:flex;
+    justify-content: flex-start;
+
+}
+.home-text h5{
+    font-size:18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color:var(--main-color); 
+    padding-top:100px;
+    padding-left:30px;
+
+}
+.home-text h1{
+    font-size: var(--h1-font);
+    font-weight:800;
+    line-height: 1.2;
+    margin-bottom:20px;
+    margin-top:10px;
+    
+    padding-left:30px;
+}
+.home-text p{
+    font-size: 30px;;
+    font-weight:500;
+    line-height:30px;
+    color:white;
+    margin-bottom:30px;
+}
+.btn{
+  display:inline-block;
+  padding:13px 40px;
+  background:var(--main-color);
+  color:white;
+  font-weight:600;
+  font-size: 15px;
+  margin-left:60px;
+  border-radius:40px;
+  border:1px solid black;
+  transition:all 0.3s ease-in;
+
+}
+.btn:hover{
+   color:black;
+   background:lightskyblue;
+   transition: translateY(-5px);
+}
+.feature-content{
+   display: flex;
+    align-items:center;
+    text-align:center;
+    gap:3rem;
+   
+
+
+
+}
+.row-img{
+   overflow:hidden;
+   width:400px;
+   height:400px;
+   margin:0 auto;
+   margin-bottom:20px;
+}
+.row-img img{
+    transition:transform 0.7s;
+}
+.row-img img:hover{
+    transform: scale(1.2);
+}
+
+.feature h4{
+    font-size: 3rem;
+    font-weight:500;
+    margin-bottom:40px;
+    margin-left:80px;
+    cursor:pointer;
+     transition: all 0.3s ease;
+     text-align:center;
+}
+.feature h4:hover{
+   color:var(--main-color);
+   font-size:50px ;
+}
+.images{
+    margin-top:45px;
+    height:300px;
+
+}
+.image1{
+    height:300px;
+    margin-top:45px;
+    
+}
+.center-text{
+    text-align:center;
+
+}
+.center-text h2{
+   font-size: var(--h2-font);
+   font-weight: 800;
+   margin-left:150px;
+}
+
+.center-text h2:hover{
+  color:var(--main-color);
+}
+.tour-content{
+  display:flex;
+    align-items:center;
+    gap:3rem;
+    margin-top:5rem;
+}
+.imgg{
+    height:500px;
+    width:400px;
+    transition:transform 0.7s;
+    
+}
+.imgg:hover{
+    transform: scale(1.2);
+   
+}
+.btn-1{
+       
+        display:inline-block;
+        padding:13px 40px;
+        background:var(--main-color);
+        color:white;
+        font-weight:600;
+        font-size: 15px;
+        margin-left:600px;
+        border-radius:40px;
+        border:1px solid black;
+        transition:all 0.3s ease-in;
+        margin-top:100px;
+}      
+    
+.btn:hover{
+         color:black;
+         background:lightskyblue;
+         transition: translateY(-5px);
+      }
+.box h5{
+    position:absolute;
+    
+    font-size: 30px;
+    font-weight:500;
+}     
+.box h5:hover{
+    color:var(--main-color)
+}
+.newsletter-content{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items:center;
+    gap:2rem;
+}
+.newsletter-text h2{
+    font-size:var(--h2-font);
+    font-weight: 800;
+    margin-bottom:10px;
+
+}
+.newsletter-text p{
+    font-size:var(--p-font);
+    font-weight: 500;
+    color:#ffffffab;
+}
+.newsletter-content form{
+    display:grid;
+    grid-template-columns: 1fr 0.4fr;
+    gap:2px;
+}
+.newsletter-content form input:first-child{
+    border-radius:40px;
+    padding:20px;
+}
+.footer{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30rem;
+}
+
+.footer-box h3{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:1rem;
+}
+.footer-box  a{
+    font-size:15px;
+    margin-bottom:0.8rem;
+    color:#979797;
+    transition: all 0.3s ease;
+}
+.footer-box a:hover{
+    transform:translateX(-5px);
+    color:var(--text-color);
+}
